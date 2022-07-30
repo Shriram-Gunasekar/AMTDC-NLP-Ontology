@@ -43,7 +43,7 @@ class Insert:
             self.grade = grade
 
 def getquery():
-    query = input()
+    query = input("Use as many identifiers as possible and enter the query: ")
     return query
 
 
