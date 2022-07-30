@@ -18,8 +18,8 @@ class Similarity:
     name = ["M-Clamping","Boring bar","Welding Bar","Threading Holder"]
 
 catalog = ["catalog number KM50TSMDJNR1506"," catalog number DNMG150604MS","DNMG150604MS","KM50TSMDJNR1506"]
-for i in range(len(catalog))
-    for j in range(len(catalog))
+for i in range(len(catalog)):
+    for j in range(len(catalog)):
         if i != j:
             print(catalog[i], catalog[j])
             print(doc[i].similarity(doc[j]))
