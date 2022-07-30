@@ -1,5 +1,5 @@
 #trials
-
+import re
 import spacy
 import en_core_web_md
 from data import Holder, Insert, getquery
@@ -19,4 +19,5 @@ doc = nlp(getquery())
 #        if i != j:
 #            print(catalog[i], catalog[j])
 #            print(nlp(catalog[i]).similarity(nlp(catalog[j])))
+
 
