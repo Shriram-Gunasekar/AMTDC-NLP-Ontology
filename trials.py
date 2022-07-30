@@ -29,13 +29,27 @@ def catal_order(doc):
     L = []
     for token in doc:
         if token.is_oov:
-          L.append(token)
+            L.append(token)
     return L
     
 def ner(doc):
-    L = []
-    for ent in doc.ents:
-        L.append(ent.text)
-    return L
+    return doc.ents
 
-    
+def alphanum(mylist):
+    mylist = catal_order(doc)
+    orders = []
+    catalogue = []
+    x = None
+    for i in mylist:
+        try:
+            x = int(i)
+            orders.append(x)
+        except:
+            catalogue.append(i)
+    print(orders,catalogue)
+
+alphanum(catal_order(doc))
+            
+            
+            
+            
