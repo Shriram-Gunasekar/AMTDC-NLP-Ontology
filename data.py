@@ -42,6 +42,10 @@ class Insert:
             self.name = name
             self.grade = grade
 
+def getquery():
+    query = input()
+    return query
+
 
             
 
