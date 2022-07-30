@@ -12,6 +12,6 @@ for token in doc:
 for tup in L:
     if tup[0] == '-':
         L.pop(L.index(tup)-1)
-        L.remove(L.index(tup)+1)
+        L.remove(L[L.index(tup)+1])
         L.remove(tup)
 print(L)
