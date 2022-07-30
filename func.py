@@ -29,7 +29,7 @@ def catal_order(doc):
     L = []
     for token in doc:
         if token.is_oov:
-            L.append(token)
+            L.append(token.text)
     return L
     
 def ner(doc):
