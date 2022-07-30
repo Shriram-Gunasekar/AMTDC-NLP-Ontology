@@ -1,4 +1,5 @@
 import re
+from difflib import SequenceMatcher
 import spacy
 import en_core_web_md
 from data import *
@@ -15,3 +16,7 @@ for tup in L:
         L.remove(L[L.index(tup)+1])
         L.remove(tup)
 print(L)
+
+def similar(a, b):
+    return SequenceMatcher(None, a, b).ratio()
+    
