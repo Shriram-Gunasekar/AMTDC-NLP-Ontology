@@ -1,13 +1,47 @@
 # NLP Data Classes
 
-class Material:
-    def __init__(self, name, description, price, quantity):
-        self.name = name
-        self.spec = spec
+class Holder:
+    class Full:
+        def __init__(self, catalog_number, order_number):
+            self.data = catalog_number
+            self.data = order_number
+    class Coating:
+        def __init__(self, group, subgroup, subdetail):
+            self.group = group
+            self.subgroup = subgroup
+            self.subdetail = subdetail
+
+    class Material:
+        def __init__(self, material, description):
+            self.material = material
+            self.description = description
     
-    def __len__(self):
-        pass
+    class NameGrade :
+        def __init__(self, name, grade):
+            self.name = name
+            self.grade = grade
+
+class Insert:
+    class Full:
+        def __init__(self, catalog_number, order_number):
+            self.data = catalog_number
+            self.data = order_number
+    class Coating:
+        def __init__(self, group, subgroup, subdetail):
+            self.group = group
+            self.subgroup = subgroup
+            self.subdetail = subdetail
+
+    class Material:
+        def __init__(self, material, description):
+            self.material = material
+            self.description = description
     
-    def __getitem__(self, key):
-        pass
+    class NameGrade :
+        def __init__(self, name, grade):
+            self.name = name
+            self.grade = grade
+
+
+            
 
