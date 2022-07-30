@@ -1,7 +1,7 @@
 import re
 import spacy
 import en_core_web_md
-from data import Holder, Insert, getquery
+from data import Holder, Insert
 nlp = spacy.load('en_core_web_md')
 
 
