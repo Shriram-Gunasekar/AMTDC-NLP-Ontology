@@ -31,6 +31,11 @@ def catal_order(doc):
         if token.is_oov:
           L.append(token)
     return L
-        
+    
+def ner(doc):
+    L = []
+    for ent in doc.ents:
+        L.append(ent.text)
+    return L
 
     
