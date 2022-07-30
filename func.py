@@ -44,12 +44,11 @@ def alphanum(mylist):
         try:
             x = int(i)
             orders.append(x)
-        except:
+        except ValueError:
             catalogue.append(i)
     print(orders,catalogue)
 
 alphanum(catal_order(doc))
-            
-            
+  
             
             
