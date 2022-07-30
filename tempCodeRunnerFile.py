@@ -1,0 +1,1 @@
+print(catalog[i], catalog[j])
