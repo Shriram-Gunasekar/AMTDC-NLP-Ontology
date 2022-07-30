@@ -35,7 +35,7 @@ def catal_order(doc):
 def ner(doc):
     return doc.ents
 
-def alphanum(mylist):
+def alphanum():
     mylist = catal_order(doc)
     orders = []
     catalogue = []
@@ -46,9 +46,8 @@ def alphanum(mylist):
             orders.append(x)
         except ValueError:
             catalogue.append(i)
-    print(orders,catalogue)
-
-alphanum(catal_order(doc))
+    return (orders,catalogue)
   
-            
+
+
             
