@@ -23,3 +23,4 @@ for i in range(len(catalog)):
         if i != j:
             print(catalog[i], catalog[j])
             print(nlp(catalog[i]).similarity(nlp(catalog[j])))
+
