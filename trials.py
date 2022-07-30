@@ -1,17 +1,16 @@
-#import re
+import re
 from difflib import SequenceMatcher
-#import spacy
-#import en_core_web_md
-#from data import *
-#nlp = spacy.load('en_core_web_md')
+import spacy
+import en_core_web_md
+nlp = spacy.load('en_core_web_md')
 
-#def query():
-#    query = input("Enter your query: ")
-#    return query
-#
-#query = query()
-#query = query.lower()
-#doc = nlp(query) 
+def query():
+    query = input("Enter your query: ")
+    return query
+
+query = query()
+query = query.lower()
+doc = nlp(query) 
 
 #L = []
 #for token in doc:
@@ -26,7 +25,12 @@ from difflib import SequenceMatcher
 def similar(a, b):
     return SequenceMatcher(None, a.lower(), b.lower()).ratio()
 
-pattern = "[a-zA-Z]*[1-9]*"
-
+def catal_order(doc):
+    L = []
+    for token in doc:
+        if token.is_oov:
+          L.append(token)
+    return L
+        
 
     
