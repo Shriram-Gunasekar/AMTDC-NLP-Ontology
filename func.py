@@ -47,6 +47,11 @@ def alphanum():
         except ValueError:
             catalogue.append(i)
     return (orders,catalogue)
+
+def detail():
+    # Internal Detail
+    # Semantic Similarity
+    
   
 
 
