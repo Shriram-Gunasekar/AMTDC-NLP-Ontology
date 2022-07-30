@@ -22,5 +22,4 @@ for i in range(len(catalog)):
     for j in range(len(catalog)):
         if i != j:
             print(catalog[i], catalog[j])
-            print(doc[i].similarity(doc[j]))
-            print("\n")
+            print(nlp(catalog[i]).similarity(nlp(catalog[j])))
