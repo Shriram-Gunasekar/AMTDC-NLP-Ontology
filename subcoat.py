@@ -31,3 +31,10 @@ train_x = ["Unalloyed WC/Co (Tungsten Carbide with Cobalt binder), fine grained"
            "Polycrystalline Diamond tip - brazed on to carbide substrate - No coating",
            "CVD (chemical vapour deposition) deposited diamond sheet tool - brazed onto carbide substrate - No coating"
             ]
+
+from sklearn.feature_extraction.text import CountVectorizer
+vectorizer = CountVectorizer()
+vectors = vectorizer.fit_transform(train_x)
+
+print(vectorizer.get_feature_names())
+print(vectors.toarray())
