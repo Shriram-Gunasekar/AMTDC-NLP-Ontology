@@ -1,4 +1,5 @@
-train_x = ["Unalloyed WC/Co (Tungsten Carbide with Cobalt binder), fine grained",
+from gradedata import Grade
+subcoat = ["Unalloyed WC/Co (Tungsten Carbide with Cobalt binder), fine grained",
            "Unalloyed WC/Co (Tungsten Carbide with Cobalt binder), coarse grained",
            "unalloyed carbide substrate with PVD coating of TiAlN (Titanium Aluminium Nitride)",
            "ultra-fine grain unalloyed substrate with PVD coating of TiAlN (Titanium Aluminium Nitride)",
@@ -32,9 +33,21 @@ train_x = ["Unalloyed WC/Co (Tungsten Carbide with Cobalt binder), fine grained"
            "CVD (chemical vapour deposition) deposited diamond sheet tool - brazed onto carbide substrate - No coating"
             ]
 
-from sklearn.feature_extraction.text import CountVectorizer
-vectorizer = CountVectorizer()
-vectors = vectorizer.fit_transform(train_x)
+#annotations = [ ]
 
-print(vectorizer.get_feature_names())
-print(vectors.toarray())
+grades=["K313","K68","KC5010","KC5025","KC5410","KC5510","KC5525","KU10T ","KU25T ","KC8050","KC9040",
+        "KC9110","KC9125","KC9140","KC9225","KC9240","KC9245","KC9315","KC9325","KU30T ","KT315 ",
+        "KY1310","KY1525","KY1540","KY1615","KY2100","KY3400","KY3500","KY4400","KB5625","KB9610",
+        "KB9640","KD120 ","KD100 ","KD1405"]
+print(grades)
+#from sklearn.feature_extraction.text import CountVectorizer
+#
+#vectorizer = CountVectorizer()
+#vectors = vectorizer.fit_transform(train_x)
+#
+#print(vectorizer.get_feature_names())
+#print(vectors.toarray())
+#
+#from sklearn import svm
+#clf_svm = svm.svc(kernel='linear')
+#clf_svm.fit(subcoat,grades)
