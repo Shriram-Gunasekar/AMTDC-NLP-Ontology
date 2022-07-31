@@ -1,4 +1,3 @@
-from gradedata import Grade
 subcoat = ["Unalloyed WC/Co (Tungsten Carbide with Cobalt binder), fine grained",
            "Unalloyed WC/Co (Tungsten Carbide with Cobalt binder), coarse grained",
            "unalloyed carbide substrate with PVD coating of TiAlN (Titanium Aluminium Nitride)",
