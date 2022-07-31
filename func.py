@@ -51,6 +51,11 @@ def alphanum():
 def detail():
     # Internal Detail
     # Semantic Similarity
+    return None
+
+sent1 = nlp('machining ease 70-100 with a good quality')
+sent2 = nlp('Copper, Brass, Zinc-based on machinability index range of 70-100							')
+print(sent1.similarity(sent2))
     
   
 
