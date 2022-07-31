@@ -39,14 +39,14 @@ grades=["K313","K68","KC5010","KC5025","KC5410","KC5510","KC5525","KU10T ","KU25
         "KY1310","KY1525","KY1540","KY1615","KY2100","KY3400","KY3500","KY4400","KB5625","KB9610",
         "KB9640","KD120 ","KD100 ","KD1405"]
 print(grades)
-#from sklearn.feature_extraction.text import CountVectorizer
-#
-#vectorizer = CountVectorizer()
-#vectors = vectorizer.fit_transform(train_x)
-#
-#print(vectorizer.get_feature_names())
-#print(vectors.toarray())
-#
-#from sklearn import svm
-#clf_svm = svm.svc(kernel='linear')
-#clf_svm.fit(subcoat,grades)
+from sklearn.feature_extraction.text import CountVectorizer
+
+vectorizer = CountVectorizer()
+vectors = vectorizer.fit_transform(train_x)
+
+print(vectorizer.get_feature_names())
+print(vectors.toarray())
+
+from sklearn import svm
+clf_svm = svm.svc(kernel='linear')
+clf_svm.fit(annotations,grades)
