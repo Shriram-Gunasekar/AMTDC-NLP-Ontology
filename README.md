@@ -1,6 +1,6 @@
 # README File
 
-## NLP Ontology - AMTDC 
+## Ontology Project- AMTDC 
 
 Contains First Code Templated File
 
