@@ -32,7 +32,7 @@ subcoat = ["Unalloyed WC/Co (Tungsten Carbide with Cobalt binder), fine grained"
            "CVD (chemical vapour deposition) deposited diamond sheet tool - brazed onto carbide substrate - No coating"
             ]
 
-#annotations = [ ]
+annotations = [ ]
 
 grades=["K313","K68","KC5010","KC5025","KC5410","KC5510","KC5525","KU10T ","KU25T ","KC8050","KC9040",
         "KC9110","KC9125","KC9140","KC9225","KC9240","KC9245","KC9315","KC9325","KU30T ","KT315 ",
