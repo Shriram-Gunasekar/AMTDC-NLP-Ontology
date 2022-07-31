@@ -1,7 +1,8 @@
-subcoat = [ "Unalloyed WC/Co (Tungsten Carbide with Cobalt binder), fine grained",
+annot = [ "Unalloyed WC/Co (Tungsten Carbide with Cobalt binder), fine grained",
             "Exceptional edge wear resistance combined with very high strength",
             "Superior thermal deformation and depth of cut notch resistance",
             
+            "Unalloyed WC/Co (Tungsten Carbide with Cobalt binder), fine grained",
             "excellent abrasion resistance",
  
             "unalloyed carbide substrate with PVD coating of TiAlN (Titanium Aluminium Nitride)",
@@ -175,10 +176,8 @@ subcoat = [ "Unalloyed WC/Co (Tungsten Carbide with Cobalt binder), fine grained
             "Abrasion resistant suitable for non-ferrous metals and non-metallic materials",
             ]
 
-annotations = [ ]
-
 grades=["K313","K313","K313",
-        "K68",
+        "K68","K68",
         "KC5010","KC5010","KC5010","KC5010",
         "KC5025","KC5025","KC5025","KC5025",
         "KC5410","KC5410","KC5410","KC5410","KC5410","KC5410",
@@ -192,7 +191,7 @@ grades=["K313","K313","K313",
         "KC9125","KC9125","KC9125","KC9125","KC9125","KC9125","KC9125","KC9125",
         "KC9140","KC9140","KC9140","KC9140",
         "KC9225","KC9225","KC9225","KC9225","KC9225","KC9225",
-        "KC9240","KC9240","KC9240","KC9240","KC9240",
+        "KC9240","KC9240","KC9240","KC9240",
         "KC9245","KC9245","KC9245","KC9245","KC9245",
         "KC9315","KC9315","KC9315","KC9315","KC9315","KC9315",
         "KC9325","KC9325","KC9325",
@@ -212,15 +211,17 @@ grades=["K313","K313","K313",
         "KD120","KD120",
         "KD100","KD100","KD100","KD100",
         "KD1405","KD1405"]
-#print(grades)
-#from sklearn.feature_extraction.text import CountVectorizer
-#
-#vectorizer = CountVectorizer()
-#vectors = vectorizer.fit_transform(train_x)
-#
-#print(vectorizer.get_feature_names())
+from sklearn.feature_extraction.text import CountVectorizer
+
+vectorizer = CountVectorizer(binary=True)
+train_annot = vectorizer.fit_transform(annot)
+
+#print(vectorizer.get_feature_names_out())
 #print(vectors.toarray())
-#
-#from sklearn import svm
-#clf_svm = svm.svc(kernel='linear')
-#clf_svm.fit(annotations,grades)
+
+from sklearn import svm
+clf_svm = svm.SVC(kernel='linear')
+clf_svm.fit(train_annot,grades)
+
+test_x = vectorizer.transform(['Smooth finish and resistance to abrasion with neat finish'])
+print(clf_svm.predict(test_x))
