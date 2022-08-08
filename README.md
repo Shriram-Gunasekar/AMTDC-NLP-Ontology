@@ -1,7 +1,6 @@
 # README File
 
-## Ontology Project- AMTDC 
+## Ontology Project NLP- AMTDC 
 
-Contains First Code Templated File
-
-Testing Changes (x2)
+Currently Completed Cypher Queries For Parts Of The Database
+SVM algorithm applied to InsertGrade Dataset and Got The Results
