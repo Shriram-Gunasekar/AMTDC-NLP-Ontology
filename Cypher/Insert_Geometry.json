@@ -1,0 +1,1 @@
+"[{\"Node Name\":\"Trade_name\",\"id\":1,\"Unnamed: 2\":null,\"Unnamed: 3\":null,\"cypher query\":\"CREATE(n:Trade_name{id: 1 });\"}]"

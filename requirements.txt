@@ -1,0 +1,6 @@
+#### This Is A Rough Draft Of The Requirements List
+
+
+neo4j
+spacy
+scikit learn
