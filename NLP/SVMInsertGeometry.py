@@ -22,11 +22,11 @@ vectorizer = CountVectorizer(binary=True)
 train_annot = vectorizer.fit_transform(annot)
 
 #print(vectorizer.get_feature_names_out())
-#print(vectors.toarray())
+#print(train_annot.toarray())
 
 from sklearn import svm
 clf_svm = svm.SVC(kernel='linear')
-clf_svm.fit(train_annot,labels)
+clf_svm.fit(train_annot, labels)
 
-test_x = vectorizer.transform(['90 degree'])
+test_x = vectorizer.transform(['90'])
 print(clf_svm.predict(test_x))
