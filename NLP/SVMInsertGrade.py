@@ -14,5 +14,5 @@ from sklearn import svm
 clf_svm = svm.SVC(kernel='linear')
 clf_svm.fit(train_annot,data['Grades'])
 
-test_x = vectorizer.transform(['I want less abrasion and less bruising'])
+test_x = vectorizer.transform(['Lightweight, easy to use, and very comfortable.'])
 print(clf_svm.predict(test_x))
