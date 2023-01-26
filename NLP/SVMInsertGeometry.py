@@ -28,5 +28,5 @@ from sklearn import svm
 clf_svm = svm.SVC(kernel='linear')
 clf_svm.fit(train_annot, labels)
 
-test_x = vectorizer.transform(['90'])
+test_x = vectorizer.transform(['Recommend the best geometry for high speed machining'])
 print(clf_svm.predict(test_x))

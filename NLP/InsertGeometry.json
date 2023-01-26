@@ -1,9 +1,8 @@
 {
   "Square": [
-    "The square insert",
-    "Has 4 cutting edges per side",
+    "The square insert has 4 cutting edges per side",
     "If the insert is negative then it is possible to use a total of 8 corners",
-    "Thus making this style of insert very economical",
+    "Very economical",
     "The insert has a cutting edge angle of 90 degree",
     "So it has high cutting edge strength",
     "Needs a side cutting edge angle",
