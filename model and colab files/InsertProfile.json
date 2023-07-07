@@ -1,0 +1,24 @@
+{ 
+    "Full profile ":[ 
+                "The full thread profile is cut by the insert", 
+                "Root and the crest is controlled by the insert", 
+                "No deburring required", 
+                "Use 0.05-0.07 mm (0.002-0.003 inch) for stock.",
+                "Each insert can only cut one pitch." 
+            ],
+    "V-profile insert":[ 
+                "Flexibility, one insert for several pitches", 
+                "Minimum tool inventory.",
+                "The outer/inner diameter must be turned to the right diameter prior to threading", 
+                "Burr formation", 
+                "Insert nose radius is smaller to cover the range of pitches which reduces tool life." 
+         
+    ],
+    "Multi-point insert":[ 
+                "Similar to full profile insert, two pointed give double productivity etc.", 
+                "Very high productive rate", 
+                "Double tool life.", 
+                "Need stable conditions due to increased cutting forces", 
+                "Need sufficient room behind the last thread to clear the last tooth of the insert, generating a full thread." 
+    ]
+}
