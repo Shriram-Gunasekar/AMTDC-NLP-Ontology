@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 #### This Is A Rough Draft Of The Requirements List
 
 
 neo4j
 spacy
+=======
+#### This Is A Rough Draft Of The Requirements List
+
+
+neo4j
+spacy
+>>>>>>> d9fc7904d6718aae18efd27aa288a25a8661b61f
 scikit learn
