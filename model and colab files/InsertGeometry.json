@@ -1,0 +1,49 @@
+{
+  "Square": [
+    "The square insert has 4 cutting edges per side",
+    "If the insert is negative then it is possible to use a total of 8 corners",
+    "Very economical",
+    "The insert has a cutting edge angle of 90 degree",
+    "So it has high cutting edge strength",
+    "Needs a side cutting edge angle",
+    "Cannot be used for machining a right angle."
+  ],
+  "Triangular": [
+    "The triangular insert",
+    "Has 3 cutting edges per side",
+    "It has less corners",
+    "Effective in machining right angles",
+    "Copy machining(copying)",
+    "Cutting edge point angle of 60 degree",
+    "Less cutting edge strength"
+  ],
+  "80 Rhombic": [
+    "External machining and facing",
+    "Often used on CNC lathes",
+    "Most commonly used insert."
+  ],
+  "55 Rhombic": [
+    "Copy machining",
+    "Less cutting edge strength when compared with other inserts geometries",
+    "Either 55 degree or 35 degree depends on the geometry of the workpiece being machined."
+  ],
+  "35 Rhombic": [
+    "These types of inserts are often used for copy machining.The insert itself has less cutting edge strength when compared with other inserts geometries.However,it is essential for copy machining.The use of either 55 degree or 35 degree depends on the geometry of the workpiece being machined."
+  ],
+  "Trigon": [
+    "This particular insert has 3 cutting edges per side",
+    "If the insert is negative then a total of 6corners can be used",
+    "The cutting edge angle is 80 degree and therefore offers high cutting edge strength",
+    "However due to the short cutting edge length the depth of cut is limited."
+  ],
+  "Round": [
+    "Strongest cutting edge",
+    "Best surface finish",
+    "Long cutting edge the chips developed are relatively wide and such difficult to break",
+    "Large contact area and the long cutting edge length",
+    "The load on the insert increases",
+    "Vibrations when machining small or thin walled objects",
+    "Best suited for machining that requires high cutting edge strength",
+    "Interrupted cuts removing scale and when machining cast iron as the chips do not elongate."
+  ]
+}
